@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="todo">
+      <div class="header">
+        <h1>ToDo List</h1>
+        <input
+          type="text"
+          class="todoInput"
+          placeholder="Wpisz treść zadania..."
+        />
+        <button class="addBtn">Add</button>
+      </div>
+      <div class="todoList">
+        <h3>Lista zadań:</h3>
+        <p class="alertInfo">Brak zadań na liście.</p>
+        <ul> 
+          <li id="test">
+            Wypić kawę
+            <div class="tools">
+              <button class="complete"><i class="fas fa-check"></i></button
+              ><button class="edit">EDIT</button
+              ><button class="delete"><i class="fas fa-times"></i></button>
+            </div>
+          </li>
+          <li id="test2">
+            Zjeść śniadanie
+            <div class="tools">
+              <button class="complete"><i class="fas fa-check"></i></button
+              ><button class="edit">EDIT</button
+              ><button class="delete"><i class="fas fa-times"></i></button>
+            </div>
+          </li>
+          <li id="test3">
+            Umyć okna
+            <div class="tools">
+              <button class="complete"><i class="fas fa-check"></i></button
+              ><button class="edit">EDIT</button
+              ><button class="delete"><i class="fas fa-times"></i></button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="popup">
+      <h3>Edytuj zadanie:</h3>
+      <div class="popupBody">
+        <p class="popupInfo"></p>
+        <input
+          type="text"
+          class="popupInput"
+          placeholder="Wprowadź nowę treść zadania..."
+        />
+        <button class="popupBtn accept">Zatwierdź</button>
+        <button class="popupBtn cancel">Anuluj</button>
+      </div>
+    </div>
+    <script src="/js.js"></script>
+    </body>
+</html>
